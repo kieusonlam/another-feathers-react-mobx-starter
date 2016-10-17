@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "mongodb": "mongodb://localhost:27017/kslwebapp",
+  "public": "../public/",
+  "auth": {
+    "token": {
+      "secret": "udsUsYWrnLOeiDr6ecGrYhUXCQyPmEnqZnt/G9XJ1BUyEgNcpFbwz1YoVByRNv2OkHrEvwbSs21AkmnX5IPI7Q=="
+    },
+    "local": {}
+  }
+}
