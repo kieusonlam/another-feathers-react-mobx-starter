@@ -62,6 +62,7 @@
   },
   "devDependencies": {
     "jshint": "^2.9.3",
+    "json-stringify-safe": "^5.0.1",
     "mocha": "^3.0.2",
     "request": "^2.74.0",
     "webpack-dev-server": "^1.16.1"

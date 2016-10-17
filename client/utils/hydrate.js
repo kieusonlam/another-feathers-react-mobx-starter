@@ -1,3 +1,4 @@
+import jsonStringifySafe from 'json-stringify-safe';
 import { toJS } from 'mobx';
 import initStore from '../stores';
 
@@ -6,7 +7,7 @@ import initStore from '../stores';
 */
 export function dehydrate(store) {
   // convert store to json
-  return toJS(store, true);
+  return jsonStringifySafe(toJS(store, true));
 }
 
 /**

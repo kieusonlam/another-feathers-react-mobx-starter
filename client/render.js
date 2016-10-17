@@ -41,7 +41,7 @@ function handleRouter(req, res, props) {
     .then(() => {
       const initialView = ReactDOMServer.renderToStaticMarkup(<ContextProvider context={{ store }}><RouterContext {...props} /></ContextProvider>)
       const finalState = JSON.stringify(dehydrate(store))
-      return res.status(200).end(renderFullPage(initialView, finalState))
+      return res.end(renderFullPage(initialView, finalState))
     })
 }
 
